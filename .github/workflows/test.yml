@@ -1,0 +1,8 @@
+name: local test
+on: pull_request
+jobs:
+  todos:
+    runs-on: ubuntu-latest
+    name: Find todos
+    steps:
+      - uses: actions/checkout@v1

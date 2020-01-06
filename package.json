@@ -1,0 +1,33 @@
+{
+  "name": "todo-checks",
+  "version": "1.0.0",
+  "description": "GitHub Action to find all added TODO comments and set as failing PR checks",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build -o dist src/index.js",
+    "format": "prettier --write 'src/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/todo-checks.git"
+  },
+  "keywords": [
+    "github",
+    "github-action",
+    "todo",
+    "check"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/todo-checks/issues"
+  },
+  "homepage": "https://github.com/bahmutov/todo-checks#readme",
+  "devDependencies": {
+    "@types/node": "^12.0.4",
+    "@zeit/ncc": "0.20.5",
+    "prettier": "1.19.1"
+  },
+  "private": true
+}
